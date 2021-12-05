@@ -5,7 +5,9 @@ dashboards. The dashboard is to show the sentiment in the tweets about
 the bus service in Munich. The detail of the dashboard is discussed
 [here](https://github.com/megnergit/MunichBusService_Heroku_S2).
 
-The screenshot of the dashboard on Data Studio is here.
+The dashboard on Data Studio can be seen [here](https://datastudio.google.com/reporting/6e3d878f-af93-44f4-9713-8adef3931dad/page/yAbgC)(not updated). 
+
+Here is the screenshot. 
 ![](./images/screen_shot.png)
 
 ## Strearmlit + Heroku versus Data Studio by Google Cloud
