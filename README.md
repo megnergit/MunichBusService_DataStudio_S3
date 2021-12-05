@@ -6,7 +6,7 @@ the bus service in Munich. The detail of the dashboard is discussed
 [here](https://github.com/megnergit/MunichBusService_Heroku_S2).
 
 The screenshot of the dashboard on Data Studio is
-[here](./images/screen_shot.png).
+![](./images/screen_shot.png).
 
 ## Strearmlit + Heroku versus Data Studio by Google Cloud
 
@@ -209,7 +209,8 @@ in this order.
   in the case of Data Studio.
 
 
-#-------------------------------------------
+-------------------------------------------
+
 4. Streamlit + Heroku Pros
 
 - The column-only structure is a restriction, but in the same time it
@@ -242,7 +243,7 @@ in this order.
   button with mouse), but just type in `help(function)`.
 
 
-#-------------------------------------------
+-------------------------------------------
 # Conclusion
 
 I prefer Streamlit + Heroku better to Data Studio. In short, it is
