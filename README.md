@@ -1,3 +1,9 @@
+
+'best version of myself'. such a wonderful word.
+I made it my own goal as well. Thank you. Miwa
+
+
+
 # How People Like Munich Bus Service <br> - Dashboard Comparison
 
 We compare two tech stacks in deploying almost identical
