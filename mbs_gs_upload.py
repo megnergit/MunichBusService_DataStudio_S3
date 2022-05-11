@@ -13,13 +13,13 @@ DATA_DIR = config.DATA_DIR
 
 mbs_pn = 'mbs_pn.csv'
 mbs_ds = 'mbs_ds.csv'  # store for data studio
-df = pd.read_csv(DATA_DIR/mbs_pn, parse_dates=['created_at_tz'])
+df = pd.read_csv(DATA_DIR/Path(mbs_pn), parse_dates=['created_at_tz'])
 
 df['is_Positive'] = [1 if p == 1 else 0 for p in df['sentiment_digit']]
 df['is_Negative'] = [1 if p == -1 else 0 for p in df['sentiment_digit']]
 df['is_Neutral'] = [1 if p == 0 else 0 for p in df['sentiment_digit']]
 
-df.to_csv(DATA_DIR/mbs_ds, index=False)
+df.to_csv(DATA_DIR/Path(mbs_ds), index=False)
 # ====================================================================
 scope = 'https://spreadsheets.google.com/feeds'
 credentials_file_path = './client_secret.json'
@@ -35,6 +35,11 @@ for f in update_files:
     workbook.values_update(f,  # name of sheet
                            params={'valueInputOption': 'USER_ENTERED'},
                            body={'values': list(csv.reader(
-                               open(DATA_DIR/(f+'.csv'))))
+                               open(DATA_DIR/Path(f+'.csv'))))
                            }
                            )
+
+# ====================================================================
+# scratch
+# --------------------------------------------------------------------
+# DATA_DIR
